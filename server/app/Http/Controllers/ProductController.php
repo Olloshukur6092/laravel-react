@@ -60,6 +60,7 @@ class ProductController extends Controller
      */
     public function show(Product $product)
     {
+        // dd($product);
         return response()->json([
             'product'=>$product
         ]);
