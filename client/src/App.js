@@ -19,6 +19,7 @@ import About from "./containers/About";
 import Blogs from "./containers/Blogs";
 import Services from "./containers/Services";
 import Projects from "./containers/Projects";
+import Profile from "./components/users/profile.component";
 function App() {
   return (
     <Router>
@@ -47,6 +48,7 @@ function App() {
               <Route path="/services" element={<Services />} />
               <Route path="/projects" element={<Projects />} />
               <Route path="/register" element={<Register />} />
+              <Route path="/profile" element={<Profile />} />
               <Route path="/login" element={ <Login /> } />
               <Route path="/product/create" element={<CreateProduct />} />
               <Route path="/product/edit/:id" element={<EditProduct />} />
